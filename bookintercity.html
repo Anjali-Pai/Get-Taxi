@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Book your drive with crazytaxi.
+</title>
+<style type="text/css">
+body::-webkit-scrollbar {
+    width: 0.5em;
+    min-height: 10px;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color:  #D62929;
+  border-radius: 10px;
+}
+</style>
+<script language="javascript">
+function x()
+{
+var a,b,c,d,apos,dflag=0,dpos1,dpos2,flag=0,cflag=0;
+a=document.f.s.value;
+c=document.f.c.value;
+b=a.length;
+d=c.length;
+apos=a.indexOf("@");
+dpos1=a.indexOf(".");
+dpos2=a.lastIndexOf(".");
+if(apos==0||apos==-1||apos==b)
+{
+cflag=1;
+}
+if(dpos1==0||apos-dpos1<=3||dpos2-apos<=3||dpos1==-1||dpos2==b-1)
+{
+cflag=1;
+}
+if(d<"8" || d>"10" || d=="9")
+	{
+	dflag=1;
+	}
+	for(i=0;i<d;i++)
+	{
+	var k=c.charAt(i);
+	if(k<"0" || k>"9")
+	{dflag=1;
+	}
+	if(k==" ")
+	{
+	dflag=1;
+	}}
+if(dflag==1 && cflag==0)
+	{
+	alert("Please enter valid number");
+	document.f.c.focus();
+	document.f.c.value="";
+}
+if(cflag==1 && dflag==0)
+{
+alert("Invalid Email Address");
+document.f.s.focus();
+document.f.s.value="";
+}
+if(dflag==1 && cflag==1)
+	{
+	alert("Invalid email address and contact number!");
+	document.f.c.focus();
+	document.f.c.value="";
+	document.f.s.focus();
+	document.f.s.value="";
+}
+if(cflag==0 && dflag==0)
+{
+if (confirm("Are you sure?") == true) {
+        alert("Booking Successful");
+       var review=prompt("Give us rating between 1 and 10","10");
+if(review<1 || review>10)
+{
+alert("Please give valid rating");
+}
+else
+{
+alert("Thank you for the review");
+}
+    } else {
+        alert("Booking Unsuccessful");
+    }
+}
+}
+</script>
+</head>
+<body bgcolor="#EAEAEA">
+<font face="Cambria Math">
+<FORM name="f" ACTION="CARCRAZY.COM">
+<fieldset>
+<fieldset><LEGEND><b>Location</b></LEGEND><P>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+From :    <SELECT NAME="location">
+<OPTION VALUE="1">Mumbai
+<OPTION VALUE="2">Delhi
+<OPTION VALUE="3">Banglore
+<OPTION VALUE="4">Jaipur
+<OPTION VALUE="5"> Ahmedabad
+<OPTION VALUE="6">Chennai
+<OPTION VALUE="7">Calcutta 
+<OPTION VALUE="8">  Bhubaneshwar
+<OPTION VALUE="9">Vadodra
+<OPTION VALUE="10">Pune
+<OPTION VALUE="11">Surat
+<OPTION VALUE="12">Chandigarh
+<OPTION VALUE="13">Hyderabad
+</SELECT>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+To :    <SELECT NAME="location1">
+<OPTION VALUE="1">Mumbai
+<OPTION VALUE="2">Delhi
+<OPTION VALUE="3">Banglore
+<OPTION VALUE="4">Jaipur
+<OPTION VALUE="5"> Ahmedabad
+<OPTION VALUE="6">Chennai
+<OPTION VALUE="7">Calcutta 
+<OPTION VALUE="8">  Bhubaneshwar
+<OPTION VALUE="9">Vadodra
+<OPTION VALUE="10">Pune
+<OPTION VALUE="11">Surat
+<OPTION VALUE="12">Chandigarh
+<OPTION VALUE="13">Hyderabad
+</SELECT><br><br>
+Pick-up Area :  <INPUT type="text" NAME=p-area>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Drop Area :  <INPUT type="text" NAME=d-area><br><br>
+</SELECT>
+</fieldset>
+<fieldset><LEGEND><b>Trip Details</b></LEGEND><P>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Type of Service : <SELECT NAME="type1">
+<OPTION VALUE="1">1 Way
+<OPTION VALUE="2">2 Way
+</select>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Time :  <INPUT type="text" NAME=time SIZE=1><SELECT NAME="type">
+<OPTION VALUE="1">AM
+<OPTION VALUE="2">PM
+</select><br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Pick-up Date :  <INPUT type="text" NAME=date SIZE=8>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Drop Date :  <INPUT type="text" NAME=date1 SIZE=8>
+</fieldset>
+<fieldset><LEGEND><b>Personal Information</b></LEGEND><P>
+First name :  <INPUT type="text" NAME=realname>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Last name :  <INPUT type="text" NAME=lastname><br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbspContact :     <INPUT type="text" NAME="c">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Email :         <INPUT type="text" NAME="s"><br>
+</fieldset><br>
+<FIELDSET><LEGEND><b>Select Taxi</b></LEGEND><P>
+Car Choice :
+<SELECT NAME="partnumber">
+<OPTION VALUE="7382">Swift
+<OPTION VALUE="2928">Honda City
+<OPTION VALUE="3993">Duster
+<OPTION VALUE="9398">Innova
+<OPTION VALUE="9399">Maruti
+<OPTION VALUE="9398">Hyundai
+<OPTION VALUE="9388">Ford
+<OPTION VALUE="9378">Skoda
+</SELECT><br>
+<INPUT TYPE="CHECKBOX" NAME="AC"> AC<BR>
+<INPUT TYPE="CHECKBOX" NAME="Non-AC"> NON-AC<BR>
+</FIELDSET>
+<LABEL FOR="terms and conditions">
+<INPUT NAME="select" TYPE="CHECKBOX" ID="moreinfo">
+Accept terms and conditions
+</LABEL><br><br>
+<INPUT TYPE="button" value ="Confirm" onclick="x();">
+</fieldset>
+</FORM>
+</font>
+</body>
+</html>

@@ -1,0 +1,33 @@
+body{
+	background: rgba(33,33,33,1);
+background: -moz-linear-gradient(left, rgba(33,33,33,1) 0%, rgba(8,8,8,1) 0%, rgba(0,0,0,0.95) 5%, rgba(3,3,3,0.92) 8%, rgba(8,8,8,0.92) 14%, rgba(20,20,20,0.92) 16%, rgba(33,33,33,0.92) 18%, rgba(41,41,41,0.92) 21%, rgba(46,46,46,0.92) 24%, rgba(20,20,20,0.92) 78%, rgba(13,13,13,0.92) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(33,33,33,1)), color-stop(0%, rgba(8,8,8,1)), color-stop(5%, rgba(0,0,0,0.95)), color-stop(8%, rgba(3,3,3,0.92)), color-stop(14%, rgba(8,8,8,0.92)), color-stop(16%, rgba(20,20,20,0.92)), color-stop(18%, rgba(33,33,33,0.92)), color-stop(21%, rgba(41,41,41,0.92)), color-stop(24%, rgba(46,46,46,0.92)), color-stop(78%, rgba(20,20,20,0.92)), color-stop(100%, rgba(13,13,13,0.92)));
+background: -webkit-linear-gradient(left, rgba(33,33,33,1) 0%, rgba(8,8,8,1) 0%, rgba(0,0,0,0.95) 5%, rgba(3,3,3,0.92) 8%, rgba(8,8,8,0.92) 14%, rgba(20,20,20,0.92) 16%, rgba(33,33,33,0.92) 18%, rgba(41,41,41,0.92) 21%, rgba(46,46,46,0.92) 24%, rgba(20,20,20,0.92) 78%, rgba(13,13,13,0.92) 100%);
+background: -o-linear-gradient(left, rgba(33,33,33,1) 0%, rgba(8,8,8,1) 0%, rgba(0,0,0,0.95) 5%, rgba(3,3,3,0.92) 8%, rgba(8,8,8,0.92) 14%, rgba(20,20,20,0.92) 16%, rgba(33,33,33,0.92) 18%, rgba(41,41,41,0.92) 21%, rgba(46,46,46,0.92) 24%, rgba(20,20,20,0.92) 78%, rgba(13,13,13,0.92) 100%);
+background: -ms-linear-gradient(left, rgba(33,33,33,1) 0%, rgba(8,8,8,1) 0%, rgba(0,0,0,0.95) 5%, rgba(3,3,3,0.92) 8%, rgba(8,8,8,0.92) 14%, rgba(20,20,20,0.92) 16%, rgba(33,33,33,0.92) 18%, rgba(41,41,41,0.92) 21%, rgba(46,46,46,0.92) 24%, rgba(20,20,20,0.92) 78%, rgba(13,13,13,0.92) 100%);
+background: linear-gradient(to right, rgba(33,33,33,1) 0%, rgba(8,8,8,1) 0%, rgba(0,0,0,0.95) 5%, rgba(3,3,3,0.92) 8%, rgba(8,8,8,0.92) 14%, rgba(20,20,20,0.92) 16%, rgba(33,33,33,0.92) 18%, rgba(41,41,41,0.92) 21%, rgba(46,46,46,0.92) 24%, rgba(20,20,20,0.92) 78%, rgba(13,13,13,0.92) 100%);
+
+}
+	a:link{
+	text-decoration: none;
+	color:yellow;
+	font-weight: bold;
+	font-family: Cambria Math;
+	font-size: 20px;
+	margin-bottom: 3px;
+	cursor:none;
+}
+a:visited{
+	color:darkorange;
+}a:hover{
+	color:red;
+	max-width: 100px;
+}
+ span {
+    color: red; 
+  }
+.title{
+	font-size: 20px;
+}ul{
+	list-style-type:none; 
+}
